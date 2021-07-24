@@ -1,3 +1,5 @@
+# Developed by GameDesert. Intended for educational use, but no-one's stopping you from doing anything else with it.
+
 from os import system
 from tkinter import *
 class Window(Frame):
