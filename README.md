@@ -3,6 +3,12 @@ This program is intended to run on Linux with Python 3, and will only work corre
 
 I am not affiliated with Apple, Libimobiledevice, or any other software developers related to this project unless oterwise stated.
 
+Feel free to modify the script to your liking to fix any issues or to better suit your needs. Just don't redistribute it without attributing me, and the people listed above. This script can be used for commercial purposes, where it corresponds with the licences of any software it depends on.
+
+
+
+[![CC-BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)]( http://creativecommons.org/licenses/by-sa/4.0/)
+
 # How to install
 
 Firstly, install all the necessary Python packages:
