@@ -15,46 +15,46 @@ sudo_password = bytes(input("Please enter sudo password: ")+"\n", 'utf-8')
 
 
 producttype_to_phone = {
-"iPhone1,1":"iPhone",
-"iPhone1,2":"iPhone 3G",
-"iPhone2,1":"iPhone 3GS",
-"iPhone3,1":"iPhone 4",
-"iPhone3,2":"iPhone 4",
-"iPhone3,3":"iPhone 4",
-"iPhone4,1":"iPhone 4s",
-"iPhone5,1":"iPhone 5",
-"iPhone5,2":"iPhone 5",
-"iPhone5,3":"iPhone 5c",
-"iPhone5,4":"iPhone 5c",
-"iPhone6,1":"iPhone 5s",
-"iPhone6,2":"iPhone 5s",
-"iPhone7,2":"iPhone 6",
-"iPhone7,1":"iPhone 6 Plus",
-"iPhone8,1":"iPhone 6s",
-"iPhone8,2":"iPhone 6s Plus",
-"iPhone8,4":"iPhone SE (1st generation)",
-"iPhone9,1":"iPhone 7",
-"iPhone9,3":"iPhone 7",
-"iPhone9,2":"iPhone 7 Plus",
-"iPhone9,4":"iPhone 7 Plus",
-"iPhone10,1":"iPhone 8",
-"iPhone10,4":"iPhone 8",
-"iPhone10,2":"iPhone 8 Plus",
-"iPhone10,5":"iPhone 8 Plus",
-"iPhone10,3":"iPhone X",
-"iPhone10,6":"iPhone X",
-"iPhone11,8":"iPhone XR",
-"iPhone11,2":"iPhone XS",
-"iPhone11,6":"iPhone XS Max",
-"iPhone11,4":"iPhone XS Max",
-"iPhone12,1":"iPhone 11",
-"iPhone12,3":"iPhone 11 Pro",
-"iPhone12,5":"iPhone 11 Pro Max",
-"iPhone12,8":"iPhone SE (2nd generation)",
-"iPhone13,1":"iPhone 12 mini",
-"iPhone13,2":"iPhone 12",
-"iPhone13,3":"iPhone 12 Pro",
-"iPhone13,4":"iPhone 12 Pro Max"
+"iPhone1,1":"iPhone                                                    ",
+"iPhone1,2":"iPhone 3G                                                    ",
+"iPhone2,1":"iPhone 3GS                                                    ",
+"iPhone3,1":"iPhone 4                                                    ",
+"iPhone3,2":"iPhone 4                                                    ",
+"iPhone3,3":"iPhone 4                                                    ",
+"iPhone4,1":"iPhone 4s                                                    ",
+"iPhone5,1":"iPhone 5                                                    ",
+"iPhone5,2":"iPhone 5                                                    ",
+"iPhone5,3":"iPhone 5c                                                    ",
+"iPhone5,4":"iPhone 5c                                                    ",
+"iPhone6,1":"iPhone 5s                                                    ",
+"iPhone6,2":"iPhone 5s                                                    ",
+"iPhone7,2":"iPhone 6                                                    ",
+"iPhone7,1":"iPhone 6 Plus                                                    ",
+"iPhone8,1":"iPhone 6s                                                    ",
+"iPhone8,2":"iPhone 6s Plus                                                    ",
+"iPhone8,4":"iPhone SE (1st generation)                                                    ",
+"iPhone9,1":"iPhone 7                                                    ",
+"iPhone9,3":"iPhone 7                                                    ",
+"iPhone9,2":"iPhone 7 Plus                                                    ",
+"iPhone9,4":"iPhone 7 Plus                                                    ",
+"iPhone10,1":"iPhone 8                                                    ",
+"iPhone10,4":"iPhone 8                                                    ",
+"iPhone10,2":"iPhone 8 Plus                                                    ",
+"iPhone10,5":"iPhone 8 Plus                                                    ",
+"iPhone10,3":"iPhone X                                                    ",
+"iPhone10,6":"iPhone X                                                    ",
+"iPhone11,8":"iPhone XR                                                    ",
+"iPhone11,2":"iPhone XS                                                    ",
+"iPhone11,6":"iPhone XS Max                                                    ",
+"iPhone11,4":"iPhone XS Max                                                    ",
+"iPhone12,1":"iPhone 11                                                    ",
+"iPhone12,3":"iPhone 11 Pro                                                    ",
+"iPhone12,5":"iPhone 11 Pro Max                                                    ",
+"iPhone12,8":"iPhone SE (2nd generation)                                                    ",
+"iPhone13,1":"iPhone 12 mini                                                    ",
+"iPhone13,2":"iPhone 12                                                    ",
+"iPhone13,3":"iPhone 12 Pro                                                    ",
+"iPhone13,4":"iPhone 12 Pro Max                                                    "
 }
 
 def pair():
@@ -86,17 +86,17 @@ def analyse():
 	try:
 		phonenum = Label(text=".", fg="Black", font=("Helvetica", 18))
 		phonenum.master.destroy
-		phonenum = Label(text="Phone Number: " + parsed_device_info["phonenumber"], fg="Black", font=("Helvetica", 14))
+		phonenum = Label(text="Phone Number: " + parsed_device_info["phonenumber"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 		phonenum.place(x=20,y=120)
 	except:
 		phonenum = Label(text=".", fg="Black", font=("Helvetica", 18))
 		phonenum.master.destroy
-		phonenum = Label(text="Phone Number: N/A                          ", fg="Black", font=("Helvetica", 14))
+		phonenum = Label(text="Phone Number: N/A                                                                        ", fg="Black", font=("Helvetica", 14))
 		phonenum.place(x=20,y=120)
 	
 	os = Label(text=".", fg="Black", font=("Helvetica", 18))
 	os.master.destroy
-	os = Label(text="Operating System: " + parsed_device_info["productname"] + " " + parsed_device_info["productversion"], fg="Black", font=("Helvetica", 14))
+	os = Label(text="Operating System: " + parsed_device_info["productname"] + " " + parsed_device_info["productversion"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	os.place(x=20,y=150)
 	
 	addresses = Label(text=".", fg="Black", font=("Helvetica", 18))
@@ -106,17 +106,17 @@ def analyse():
 	
 	wifiaddress = Label(text=".", fg="Black", font=("Helvetica", 18))
 	wifiaddress.master.destroy
-	wifiaddress = Label(text="Wi-Fi Address: " + parsed_device_info["wifiaddress"], fg="Black", font=("Helvetica", 14))
+	wifiaddress = Label(text="Wi-Fi Address: " + parsed_device_info["wifiaddress"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	wifiaddress.place(x=20,y=230)
 	
 	ethernetaddress = Label(text=".", fg="Black", font=("Helvetica", 18))
 	ethernetaddress.master.destroy
-	ethernetaddress = Label(text="Ethernet Address: " + parsed_device_info["ethernetaddress"], fg="Black", font=("Helvetica", 14))
+	ethernetaddress = Label(text="Ethernet Address: " + parsed_device_info["ethernetaddress"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	ethernetaddress.place(x=20,y=260)
 	
 	bluetoothaddress = Label(text=".", fg="Black", font=("Helvetica", 18))
 	bluetoothaddress.master.destroy
-	bluetoothaddress = Label(text="Bluetooth Address: " + parsed_device_info["bluetoothaddress"], fg="Black", font=("Helvetica", 14))
+	bluetoothaddress = Label(text="Bluetooth Address: " + parsed_device_info["bluetoothaddress"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	bluetoothaddress.place(x=20,y=290)
 	
 	ids = Label(text=".", fg="Black", font=("Helvetica", 18))
@@ -126,17 +126,17 @@ def analyse():
 	
 	imei = Label(text=".", fg="Black", font=("Helvetica", 18))
 	imei.master.destroy
-	imei = Label(text="IMEI: " + parsed_device_info["internationalmobileequipmentidentity"], fg="Black", font=("Helvetica", 14))
+	imei = Label(text="IMEI: " + parsed_device_info["internationalmobileequipmentidentity"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	imei.place(x=20,y=370)
 	
 	serial = Label(text=".", fg="Black", font=("Helvetica", 18))
 	serial.master.destroy
-	serial = Label(text="Serial Number: " + parsed_device_info["serialnumber"], fg="Black", font=("Helvetica", 14))
+	serial = Label(text="Serial Number: " + parsed_device_info["serialnumber"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	serial.place(x=20,y=400)
 	
 	modelnumber = Label(text=".", fg="Black", font=("Helvetica", 18))
 	modelnumber.master.destroy
-	modelnumber = Label(text="Model Number: " + parsed_device_info["modelnumber"] + parsed_device_info["regioninfo"], fg="Black", font=("Helvetica", 14))
+	modelnumber = Label(text="Model Number: " + parsed_device_info["modelnumber"] + parsed_device_info["regioninfo"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	modelnumber.place(x=20,y=430)
 	
 	try:	
@@ -147,7 +147,7 @@ def analyse():
 	except:
 		icci = Label(text=".", fg="Black", font=("Helvetica", 18))
 		icci.master.destroy
-		icci = Label(text="ICCI: N/A                          ", fg="Black", font=("Helvetica", 14))
+		icci = Label(text="ICCI: N/A                                                 ", fg="Black", font=("Helvetica", 14))
 		icci.place(x=20,y=460)
 	
 	ids = Label(text=".", fg="Black", font=("Helvetica", 18))
@@ -157,12 +157,12 @@ def analyse():
 	
 	zone = Label(text=".", fg="Black", font=("Helvetica", 18))
 	zone.master.destroy
-	zone = Label(text="Time Zone: " + parsed_device_info["timezone"], fg="Black", font=("Helvetica", 14))
+	zone = Label(text="Time Zone: " + parsed_device_info["timezone"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	zone.place(x=20,y=540)
 	
 	tfhr = Label(text=".", fg="Black", font=("Helvetica", 18))
 	tfhr.master.destroy
-	tfhr = Label(text="24-Hour Clock: " + parsed_device_info["uses24hourclock"], fg="Black", font=("Helvetica", 14))
+	tfhr = Label(text="24-Hour Clock: " + parsed_device_info["uses24hourclock"] + "                                                    ", fg="Black", font=("Helvetica", 14))
 	tfhr.place(x=20,y=570)
 	
 
