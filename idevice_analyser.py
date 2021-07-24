@@ -91,7 +91,7 @@ def analyse():
 	except:
 		phonenum = Label(text=".", fg="Black", font=("Helvetica", 18))
 		phonenum.master.destroy
-		phonenum = Label(text="Phone Number: N/A", fg="Black", font=("Helvetica", 14))
+		phonenum = Label(text="Phone Number: N/A                          ", fg="Black", font=("Helvetica", 14))
 		phonenum.place(x=20,y=120)
 	
 	os = Label(text=".", fg="Black", font=("Helvetica", 18))
@@ -147,7 +147,7 @@ def analyse():
 	except:
 		icci = Label(text=".", fg="Black", font=("Helvetica", 18))
 		icci.master.destroy
-		icci = Label(text="ICCI: N/A", fg="Black", font=("Helvetica", 14))
+		icci = Label(text="ICCI: N/A                          ", fg="Black", font=("Helvetica", 14))
 		icci.place(x=20,y=460)
 	
 	ids = Label(text=".", fg="Black", font=("Helvetica", 18))
